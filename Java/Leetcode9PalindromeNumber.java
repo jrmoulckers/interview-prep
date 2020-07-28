@@ -1,5 +1,5 @@
 /**
- * LeetCode 9: Palindrome Number
+ * LeetCode 9: Palindrome Number (EASY)
  * https://leetcode.com/problems/palindrome-number/
  * 
  * Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
