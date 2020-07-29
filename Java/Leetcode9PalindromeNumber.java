@@ -104,7 +104,7 @@ public class Leetcode9PalindromeNumber {
             System.out.println("Expected: " + testOutputs[test]);
 
             boolean output1 = isPalindromeString(testInputs[test]);
-            System.out.println("String Aproach Output: " + output1);
+            System.out.println("String Approach Output: " + output1);
             System.out.println((output1 == testOutputs[test] ? "--- PASS ---" : "--- FAIL ---"));
             boolean output2 = isPalindromeBetterString(testInputs[test]);
             System.out.println("Better String Approach Output: " + output2);
