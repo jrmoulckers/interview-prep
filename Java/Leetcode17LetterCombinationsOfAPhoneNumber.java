@@ -20,7 +20,7 @@ import java.util.Map;
  * Note:
  * Although the above answer is in lexicographical order, your answer could be in any order you want.
  */
-public class Leetcode22LetterCombinationsOfAPhoneNumber {
+public class Leetcode17LetterCombinationsOfAPhoneNumber {
     static Map<String, String> phone = new HashMap<>() {{
         put("2", "abc");
         put("3", "def");
