@@ -21,7 +21,9 @@ import java.util.Map;
  * Although the above answer is in lexicographical order, your answer could be in any order you want.
  */
 public class Leetcode17LetterCombinationsOfAPhoneNumber {
-    static Map<String, String> phone = new HashMap<>() {{
+    static Map<String, String> phone = new HashMap<>() {
+        private static final long serialVersionUID = -8400616138424692332L;
+        {
         put("2", "abc");
         put("3", "def");
         put("4", "ghi");
