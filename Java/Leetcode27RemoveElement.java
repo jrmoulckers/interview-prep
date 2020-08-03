@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
 /**
- * Leetcode 26: Remove Duplicates from Sorted Array (EASY)
- * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+ * Leetcode 27: Remove Element (EASY)
+ * https://leetcode.com/problems/remove-element/
  *  
  * Given an array nums and a value val, remove all instances of that value in-place 
  * and return the new length. Do not allocate extra space for another array, 
