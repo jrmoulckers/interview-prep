@@ -17,28 +17,32 @@
  *  What should we return when needle is an empty string? This is a great question to ask during an interview.
  *  For the purpose of this problem, we will return 0 when needle is an empty string. 
  *  This is consistent to C's strstr() and Java's indexOf().
- * 
- *  
  */
 public class Leetcode28ImplementStrStr {
 
-    // Quadratic approach (100% spd, 5.17% mem)
+    // Two pointer approach (37.45% spd, 5.17% mem)
     public static int strStr(String haystack, String needle) {  
+        // Two pointers for 
         int i = 0;
         int j = 0;
         
+        // Base case: needle length 0 
         if (needle.length() == 0) {
             return 0;
         }
         
+        // Run through values in haystack
         while (i < haystack.length()) {
+            // Increment ptr2 if value begins matching needle
             if (haystack.charAt(i) == needle.charAt(j)) {
                 j++;
             } else {
+                // Reset back otherwise
                 i -= j;
                 j = 0;
             }
             i++;
+            // Return index if found
             if (j == needle.length()) {
                 return i - j;
             }
