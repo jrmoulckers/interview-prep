@@ -1,7 +1,8 @@
 import java.util.Arrays;
 
 /**
- * Leetcode 66: Plus One (EASY) https://leetcode.com/problems/plus-one/
+ * Leetcode 66: Plus One (EASY)
+ * https://leetcode.com/problems/plus-one/
  * 
  * Given a non-empty array of digits representing a non-negative integer,
  * increment one to the integer. The digits are stored such that the most
