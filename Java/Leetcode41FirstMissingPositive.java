@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.List;
+import HelperClasses.ArrayHelper;
 
 /**
  * Leetcode 41: First Missing Positive (HARD)
@@ -30,7 +30,7 @@ public class Leetcode41FirstMissingPositive {
             // Swap all values that are in the range that can be placed properly in their index
             // Re-run over this area to check the newly swapped value's correct location
             if(nums[i] > 0 && nums[i] <= nums.length && nums[i] != nums[nums[i] - 1]) {
-                swap(nums, i, nums[i] - 1);
+                ArrayHelper.swap(nums, i, nums[i] - 1);
             } else {
                 i++;
             }
@@ -45,12 +45,6 @@ public class Leetcode41FirstMissingPositive {
 
         // There may only be N integers. If all 1 through N match, return N + 1
         return nums.length + 1;
-    }
-
-    private static void swap(int[] nums, int i, int j){
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
     }
 
     public static void main(String[] args) {
@@ -72,19 +66,4 @@ public class Leetcode41FirstMissingPositive {
             System.out.println(output1 == testOutputs[test] ? "--- PASS ---" : "--- FAIL ---");
         }
     } 
-
-    // Compares both int arrays
-    public static boolean isEquivalent(List<Integer> a, int[] b) {
-        if (a.size() != b.length) {
-            return false;
-        }
-
-        for(int i = 0; i < a.size(); i++) {
-            if(!(a.get(i) == b[i])) {
-                return false;
-            }
-        }
-
-        return true;
-    }
 }
